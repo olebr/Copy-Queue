@@ -5,7 +5,10 @@ Copy Queue
 * Website: <http://ubuntuincident.wordpress.com/2013/03/28/cpq-and-mvq/>
 * GitHub:  <https://github.com/jabbalaci/Copy-Queue>
 
-A command line "cp" and "mv" that use a queue.
+* Minor modifiactions: olebr, 2015
+*          <https://github.com/olebr/Copy-Queue>
+
+A command line "cp", "mv" and "rsync" that use a queue.
 
 Warning! I don't take any responsibility for any loss of data.
 Use these scripts at your own risk.
@@ -44,18 +47,19 @@ and file paths. For an easier understanding, I will explain
 the usage of the scripts with the default values.
 
 First, clone this project to the following directory:
-`$HOME/python/Copy-Queue`.
+`$HOME/bin/Copy-Queue`.
 
 Then create the directory `$HOME/bin` and add these two
 symbolic links:
 
     cd $HOME/bin
-    ln -s $HOME/python/Copy-Queue/cpq_mvq.py cpq
-    ln -s $HOME/python/Copy-Queue/cpq_mvq.py mvq
+    ln -s $HOME/bin/Copy-Queue/cpq_mvq.py cpq
+    ln -s $HOME/bin/Copy-Queue/cpq_mvq.py mvq
+    ln -s $HOME/bin/Copy-Queue/cpq_mvq.py rsyncq
 
 Make sure that `$HOME/bin` is in your `PATH`.
 
-Finally, create the directory `$HOME/bin/copy_queue`.
+Finally, create the directory `$HOME/bin/Copy-Queue/queue`.
 
 Now you are ready to use "cpq" and "mvq".
 
