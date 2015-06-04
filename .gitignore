@@ -1,3 +1,7 @@
+# queue / debug directory
+queue
+config.py
+
 *.py[cod]
 
 # C extensions
