@@ -54,6 +54,7 @@ import config as cfg
 
 CPQ = 'cp'
 MVQ = 'mv'
+RSYNCQ = 'rsync -a'
 COMMAND = None    # will be set later
 THIS_DIR = os.path.dirname(os.path.abspath(__file__))
 
@@ -80,6 +81,8 @@ def check_scriptname(s):
         COMMAND = CPQ
     elif fname == 'mvq':
         COMMAND = MVQ
+    elif fname == 'rsyncq':
+        COMMAND = RSYNCQ
     else:
         print("Error: the script cpq_mvq.py cannot be called directly.")
         print("You should put two links on it called 'cpq' and 'mvq'.")
